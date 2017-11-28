@@ -1,0 +1,64 @@
+
+.blog-list {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+
+}
+
+.pad {
+  padding-top: 1%;
+}
+
+h6 {
+  font-family: "Eras Light ITC";
+  font-size: small;
+  color: #061117;
+}
+
+.bottom {
+  background-color: transparent;
+  border-bottom: solid;
+  border-right: none;
+  border-top: none;
+}
+
+.card-title {
+  font-family: "Bernard MT Condensed";
+  color: #061117;
+}
+
+.bod {
+  font-family: "Bernard MT Condensed";
+  color: #061117;
+}
+
+.blog-list {
+  padding-top: 6%;
+}
+
+body {
+  background-color: tan;
+  width: 100%;
+  min-height: 880px;
+}
+
+.btn {
+  font-style: italic;
+  font-size: x-small;
+  font-family: "Cooper Black";
+}
+
+body {
+  background-size: 100%;
+  min-height: 900px;
+}
+
+.a {
+  font-family: Arial;
+  font-size: small;
+  color: #061117;
+  padding-top: 1%;
+  font-family: Algerian;
+
+}

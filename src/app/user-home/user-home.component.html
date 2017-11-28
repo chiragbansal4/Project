@@ -1,0 +1,29 @@
+<body background="../../assets/293870.jpg" height="900" width="1600">
+<app-nav-bar></app-nav-bar>
+<div align="center">
+  <p>
+    Welcome {{user.userName}}
+  </p>
+</div>
+<div *ngIf="user.id == 0 ">
+  <div class="b" align="center">
+    <img src="../../assets/8578.jpg" height="200" width="400"/></div>
+  <div class="a" align="left">
+    <h6>* As a Guest you cannot post blog or delete blog register as a user to post or delete blog</h6>
+  </div>
+</div>
+<div *ngIf="user.id == 1 ">
+  <div class="b" align="center">
+    <img src="../../assets/logo.jpg" height="200" width="400"/></div>
+  <div class="a" align="left">
+    <h6>* As a Admin you can post blog or delete any blog of various users as well as of yours</h6>
+  </div>
+</div>
+<div *ngIf="user.id > 1 ">
+  <div class="b" align="center">
+    <img src="../../assets/welcome.jpg" height="200" width="400"/></div>
+  <div class="a" align="left">
+    <h6>* As a User you can post blog and can delete as well can update own created blog</h6>
+  </div>
+</div>
+</body>

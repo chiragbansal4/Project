@@ -1,0 +1,45 @@
+.Heading, h1 {
+  padding-top: 6%;
+  color: #ffe9f3;
+  font-size: 200%;
+  font-family: Algerian;
+}
+
+.a {
+  padding-top: 4%;
+}
+
+.LoginForm {
+  padding-top: 6%;
+  width: 100%;
+  height: 100%;
+  border-color: white;
+
+}
+
+.form-group {
+
+  padding: 1.5% 1.5% 1.5% 1.5%;
+  color: #edffc7;
+  font-size: 120%;
+  font-family: Aharoni;
+}
+
+p {
+  padding-top: 11.5%;
+  font-size: small;
+  font-family: Algerian;
+  color: #ff6604;
+}
+
+body {
+  background-color: #061117;
+  min-height: 800px;
+  background-size: 100%;
+}
+
+h1 {
+  font-family: "Bernard MT Condensed";
+  font-size: 400%;
+  color: #ff1012;
+}

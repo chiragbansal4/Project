@@ -1,0 +1,45 @@
+<html>
+<body background="../../assets/44194.jpg">
+<div align="center" class="Heading">
+  <h1>{{title}}</h1>
+</div>
+<div class="a"></div>
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-6" align="center">
+    <div class="LoginForm" align="center">
+      <form #f="ngForm" (ngSubmit)="onSubmit()">
+        <div class="form-group" align="center">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                 placeholder="Enter email">
+        </div>
+        <div class="form-group" align="center">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="row">
+          <div class=" col-5 form-group" align="center">
+            <a (click)="guest()"><label>Click To Continue as a Guest</label></a>
+          </div>
+          <div class="col-2 form-group" align="center">
+            <label>OR</label>
+          </div>
+          <div class="col-4 form-group" align="right">
+            <a routerLink="register" routerLinkActive="active"><label>Click To Register</label></a>
+          </div>
+        </div>
+        <div class="form-group" align="center">
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </div>
+      </form>
+      <div class="instructions" align="center">
+        <button  routerLink="instructions" routerLinkActive="active" class="btn btn-link">CLICK ME FIRST:INSTRUCTIONS</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div align="right">
+</div>
+</body>
+</html>

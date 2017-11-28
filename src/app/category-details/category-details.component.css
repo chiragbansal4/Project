@@ -1,0 +1,40 @@
+.btn{
+  color: #ff1012;
+  font-family: Algerian;
+}
+.blog-list{
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+
+
+}
+.pad{
+  padding-top: 1%;
+}
+h6{
+  font-family: Algerian;
+}
+.bottom{
+  border-color: black;
+  background-color: transparent;
+  border:solid;
+}
+.card-title{
+  font-family: "Bernard MT Condensed";
+  color: #061117;
+}
+.blog-list{
+  padding-top: 6%;
+}
+.bod {
+  font-family: "Bernard MT Condensed";
+  color: darkred;
+}
+.footer{
+  padding-top: 10%;
+}
+body{
+  background-size: 100%;
+  min-height: 900px;
+}

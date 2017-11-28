@@ -1,0 +1,24 @@
+.bottom{
+  border-color: #ff6604;
+  background-color: #ffe9f3;
+  border:solid;
+}
+.card-title{
+  font-family: "Bernard MT Condensed";
+  color:  #ff1012;
+}
+.blog-list{
+  padding-top: 1%;
+}
+body{
+  background-size: 100% ;
+  min-height: 900px;
+}
+.c{
+  font-family: Arial;
+  font-size: small;
+  color: #061117;
+}
+.a{
+  font-family: "Cooper Black";
+}

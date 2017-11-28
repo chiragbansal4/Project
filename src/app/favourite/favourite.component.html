@@ -1,0 +1,32 @@
+<body background="../../assets/8806.jpg" height="1080" width="1920">
+<div align="center" class="pad button">
+  <a routerLink="../home"><button type="button" class="btn btn-dark btn-lg">CLICK TO JUMP TO MENU SECTION</button></a>
+<BR>
+  <div align="right" class="p"> <p>CLICK ON TITLE FOR EXPLORING THE BLOG</p> </div>
+</div>
+<div *ngIf="this.postFavourite.length>=0" >
+  <div class="row" *ngFor="let favourite of this.postFavourite ">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="card bottom ">
+        <div class="row top" align="center">
+          <div class="col-4"><p>By:{{favourite.authorName}} </p></div>
+          <div class="col-4"><p>On:{{favourite.postDate}}</p></div>
+          <div class="col-4"><p>Category:{{favourite.category}}</p></div>
+          <!--<div *ngIf= " this.idUser >= 0 "  class="col-3">
+            <a (click)="notFavourite(favourite.id)" class="btn btn-sm btn-link" id="notFavourite"><p>UN MARK AS A FAVOURITE</p></a>
+          </div>-->
+        </div>
+        <a routerLink="../allBlog/{{favourite.id}}">
+        <div align="center" class="title">
+         {{favourite.title}}
+        </div>
+        </a>
+      </div>
+      <br>
+    </div>
+
+  </div>
+
+</div>
+</body>

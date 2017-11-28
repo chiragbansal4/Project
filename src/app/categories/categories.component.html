@@ -1,0 +1,26 @@
+<body background="../../assets/5674.jpg">
+<app-nav-bar></app-nav-bar>
+<div class="c"align="right">click on buttons to explore related category blog</div>
+<div *ngIf="categories.length" class="blog-list">
+<div class="row" *ngFor="let category of categories ">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <div class="card bottom " >
+      <div class="card-body" align="center">
+        <a routerLink="{{this.url}}/{{category.id}}"><h4 class="card-title"><button class="btn-danger a"> Click Me:{{category.title | uppercase}}</button></h4></a>
+      </div>
+      <div *ngIf="category.title == 'entertainment' ">
+        <img src="../../assets/Entertainment.jpg" height="300px" width="1040px"/>
+      </div>
+      <div *ngIf="category.title == 'sports' ">
+        <img src="../../assets/sports.jpg" height="300px" width="1040px"/>
+      </div>
+      <div *ngIf="category.title == 'medical' ">
+        <img src="../../assets/medical.jpg" height="300px" width="1040px"/>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
+</div>
+</body>

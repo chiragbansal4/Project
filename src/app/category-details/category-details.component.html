@@ -1,0 +1,54 @@
+<body background="../../assets/208239.jpg" height="1080" width="1920">
+<!--
+<div *ngIf="post.length" class="blog-list">
+  <article *ngFor="let posts of post | slice : this.min1: this.max1 ;">
+    <a routerLink="/blog/{{posts.id}}"><p align="center">{{posts.title}} </p></a>
+    <hr>
+  </article>
+</div>
+<div *ngIf="this.max1<post.length">
+  <button  class="btn btn-danger btn-lg btn-block next" (click)="nextBlogElements()">NEXT BLOGS</button>
+</div>
+<div class="pad"></div>
+<div *ngIf="!(this.min1==0)">
+  <button  class="btn btn-dark btn-lg btn-block next" (click)="previousBlogElements()">PREVIOUS BLOGS</button>
+</div>
+-->
+<div align="center" class="pad button">
+<a routerLink="../"><button type="button" class="btn btn-dark btn-lg">Click Me: JUMP TO CATEGORIES SECTION</button></a>
+
+</div>
+  <div class="blog">
+  <div class="pad" align="center"></div>
+  <div align="left"> <h6>sorted by post date: YYYY-MM-DD<br> Click On Title To Explore Blog</h6></div>
+  <div class="pad" align="center"></div>
+  <div *ngIf="this.max1<post.length" align="center">
+    <button  class="btn btn-dark " (click)="nextBlogElements()">NEXT BLOGS</button>
+  </div>
+
+
+  <div *ngIf="!(this.min1==0)" align="center">
+    <button  class="btn btn-dark " (click)="previousBlogElements()">PREVIOUS BLOGS</button>
+  </div>
+  <div class="pad" align="center"></div>
+  </div>
+
+
+<div *ngIf="post.length" >
+  <div class="row" *ngFor="let posts of post | slice : this.min1: this.max1 ; ">
+
+    <div class="col-8">
+      <div class="card bottom ">
+        <div class="card-body" align="center">
+          <a routerLink="../../allBlog/{{posts.id}}"><h4 class="card-title">{{posts.title | uppercase}} </h4></a>
+        </div>
+        <div class="bod">
+          <p class="card-text">By.{{posts.authorName}} On:{{posts.postDate}}</p>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+<div class="footer"></div>
+</body>

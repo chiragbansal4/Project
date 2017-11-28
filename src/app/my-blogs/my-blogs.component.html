@@ -1,0 +1,70 @@
+<body background="../../assets/444222.jpg" height="1080" width="1600">
+<div align="center" class="pad button">
+  <a routerLink="../home"><button type="button" class="btn btn-link btn-lg">CLICK TO JUMP TO MENU SECTION</button></a>
+
+</div>
+<div *ngIf="post.length" >
+  <div class="row" *ngFor="let posts of post  ">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="card bottom ">
+        <div class="row" >
+        <div class="col-1">
+          <button type="button" id ="updateButton"class="btn btn-warning btn-sm " (click)="updateCurrentButton(posts)" >UPDATE</button>
+        </div>
+        <div class="col-1">
+          <button type="button" class="btn btn-success btn-sm " (click)="deleteBlog(posts)" >DELETE</button>
+        </div>
+          <div class="col-1">
+            <button type="button" class="btn btn-danger btn-sm " (click)="revertChangesOfBlog()" >REVERT</button>
+          </div>
+          <div class="col-1">
+            <button type="button" class="btn btn-link btn-sm " (click)="refreshBlog()" >REFRESH</button>
+          </div>
+          <div class="col-6"></div>
+          <div class="col-2">Category:{{posts.category}} ON:{{posts.postDate}}</div>
+        </div>
+          <div class="card-body" align="center">
+          <h4 class="card-title" >{{posts.title | uppercase}}</h4>
+        </div>
+        <div class="bod">
+          <p class="card-text">{{posts.body}}</p>
+        </div>
+      </div>
+     <!-- <div>
+      <div class="card-body" align="center">
+        <h4 class="card-title" >{{posts.title | uppercase}}</h4>
+      </div>
+      <div class="bod">
+        <p class="card-text">{{posts.body}}</p>
+      </div>
+      <div align="center">
+      <br>
+    </div>
+  </div>-->
+      <br>
+      <div class="row" *ngIf="this.flag && posts.id===this.postId">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <div class="form">
+            <form #f="ngForm" (ngSubmit)="onSubmit(posts)">
+              <div class="form-group">
+                <label for="exampleInputTitle1" class="title">Title</label>
+                <textarea name="b" [(ngModel)]="posts.title" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="exampleInputTitle1" placeholder="Enter Title"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1" class="content">Content</label>
+                <textarea name="c" [(ngModel)]="posts.body" [ngModelOptions]="{standalone: true}" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="but" align="center" ><button type="submit" class="btn btn-dark b" >Post</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+
+  </div>
+</div>
+<div ALIGN="right" class="aaaa">ALL MY POSTED BLOGS WHICH I CAN DELETE AND UPDATE</div>
+</body>

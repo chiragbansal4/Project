@@ -1,0 +1,30 @@
+p {
+  font-family: "Cooper Black";
+  font-size: 300%;
+  color: #061117;
+}
+
+.b {
+  padding-top: 7%;
+
+}
+
+body {
+  background-color: #061117;
+}
+
+.a {
+  padding-top: 20%;
+}
+
+h6 {
+  font-family: "Arial Black";
+  font-size: smaller;
+  color: #061117;
+}
+
+body {
+
+  background-size: 100%;
+  min-height: 880px;
+}

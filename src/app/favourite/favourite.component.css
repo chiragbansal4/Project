@@ -1,0 +1,36 @@
+.pad{
+  padding-top: 1%;
+}
+.bottom{
+  border-color: #ffe9f3;
+  background-color: transparent;
+  }
+.title{
+  font-family: "Bernard MT Condensed";
+  color: white;
+  font-size: 140%;
+}
+
+.btn{
+  font-style: italic;
+  font-family: Algerian;
+  color: #edffc7;
+
+}
+.col-4{
+  font-style: italic;
+  font-size: small;
+}
+p{
+  font-family:  "Bodoni MT Condensed";
+  color: #edffc7;
+  font-size: larger;
+}
+body{
+  background-size: 100%;
+  min-height: 900px;
+}
+.p{
+  font-family: Algerian;
+ color: #ff1012;
+}

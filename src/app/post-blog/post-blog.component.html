@@ -1,0 +1,42 @@
+<body background="../../assets/5559.jpg" >
+<app-nav-bar></app-nav-bar>
+<div class="row">
+<div class="col-2"></div>
+ <div class="col-8">
+  <div class="form">
+<form #f="ngForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <div class="form-group"><p class="category " align="right">Post Date: <input name="a"[(ngModel)]="post.postDate" [ngModelOptions]="{standalone: true}" type="date" id="myDate" name="bday" ></p>
+      <script>
+        var x = document.getElementById("myDate");
+        document.getElementById("demo").innerHTML = x;
+      </script>
+    </div>
+
+    <label for="exampleInputTitle1" class="title">Title</label>
+    <textarea name="b" [(ngModel)]="post.title" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="exampleInputTitle1" placeholder="Enter Title"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1" class="content">Content</label>
+    <textarea name="c" [(ngModel)]="post.body" [ngModelOptions]="{standalone: true}" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label class="category">Choose a category from this list:
+      <input [(ngModel)]="post.category" [ngModelOptions]="{standalone: true}" list="category" name="mycategory" placeholder="choose category"></label>
+    <datalist id="category">
+      <option value="sports">
+      <option value="entertainment">
+      <option value="medical">
+      <option value="others">
+    </datalist>
+  </div>
+  <div class="form-group">
+    <p ngDefaultControl [(ngModel)]="post.authorName" [ngModelOptions]="{standalone: true}">Posted By : {{user.userName}}</p>
+  </div>
+  <div class="but" align="center" ><button type="submit" class="btn btn-dark b">Post</button></div>
+</form>
+</div>
+</div>
+</div>
+<div align="right" class="aaa">POST BLOG </div>
+</body>

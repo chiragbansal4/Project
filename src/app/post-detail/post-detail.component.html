@@ -1,0 +1,36 @@
+<body background="../../assets/443781.jpg">
+<div class="post" align="right">
+  <p>Posted By : {{post.authorName}}</p>
+  <p>Posted On:{{post.postDate}}</p>
+</div>
+<div class="pad"></div>
+<div class="row">
+<div class="col-2"></div>
+<div class="col-8">
+<div class="card top" >
+    <div align="center" class="card-body">
+      <h4 class="card-title">CATEGORY : {{post.category | uppercase}}</h4>
+      <a routerLink="../" class="btn btn-warning">BACK</a>
+    </div>
+
+</div>
+</div>
+</div>
+<div class="pad"></div>
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <div class="card bottom " >
+      <div class="card-body" align="center">
+        <h4 class="card-titl">{{post.title | uppercase}}</h4>
+        </div>
+      <div class="bod">
+       <p class="card-text">{{post.body}}</p>
+       </div>
+       </div>
+  </div>
+</div>
+<div class="footer aa">
+
+</div>
+</body>

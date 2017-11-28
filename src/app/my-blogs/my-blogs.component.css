@@ -1,0 +1,42 @@
+.pad{
+  padding-top: 1%;
+}
+.bottom{
+  border-color: black;
+  background-color: transparent ;
+  border:solid;
+}
+.card-title{
+  font-family: "Bernard MT Condensed";
+  color: #061117;
+  font-size: 120%;
+}
+
+.bod{
+  font-family: "Bernard MT Condensed";
+  color: darkred;
+  font-size: 90%;
+}
+.btn{
+  font-style: italic;
+  font-family: Algerian;
+  color: #061117;
+
+}
+.col-2{
+  font-style: italic;
+  font-size: x-small;
+}
+.form-group{
+  color: #ff1012;
+  font-size: larger;
+  font-family: "Arial Black";
+}
+body{
+  background-size: 100%;
+  min-height: 900px;
+}
+.aaaa{
+  font-family: "Arial Black";
+  padding-top: 6%;
+}

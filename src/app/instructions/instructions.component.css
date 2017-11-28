@@ -1,0 +1,24 @@
+h1{
+  font-size: 300%;
+  color: #061117;
+  font-family: Algerian;
+  padding-top: 5%;
+}
+p{
+  font-size: 100%;
+  padding-top: 3%;
+  font-family: "Cooper Black";
+  color: #061117;
+}
+.btn-success{
+  color: #edffc7;
+  font-family: Algerian;
+
+}
+.bbb{
+  padding-top: 3%;
+}
+body{
+  min-height: 900px;
+  background-size: 100%;
+}

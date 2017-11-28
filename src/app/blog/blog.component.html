@@ -1,0 +1,44 @@
+<body background="../../assets/443760.jpg">
+<app-nav-bar></app-nav-bar>
+<div class="blog">
+  <div align="right"><h6>Click On Next And Previous Blog To Navigate
+    <BR>Click On Title For Exploring Blog
+    <BR>sorted by post date:yyyy-mm-dd</h6></div>
+
+  <div *ngIf="this.max1<posts.length" align="center">
+    <button class="btn btn-danger " (click)="nextBlogElements()">NEXT BLOGS</button>
+  </div>
+
+
+  <div *ngIf="!(this.min1==0)" align="center">
+    <button class="btn btn-dark " (click)="previousBlogElements()">PREVIOUS BLOGS</button>
+  </div>
+  <div class="pad" align="center"></div>
+</div>
+
+<div *ngIf="posts.length">
+  <div class="row" *ngFor="let post of posts | slice : this.min1: this.max1 ; ">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="card bottom ">
+        <div *ngIf=" this.idUser == 1" align="right">
+          <a (click)="delete(post)" class="btn btn-sm btn-primary">DELETE</a>
+        </div>
+        <div *ngIf=" this.idUser > 0 " align="right">
+          <a (click)="favourite(post)" class="btn btn-sm btn-success" id="favourite">MARK AS A FAVOURITE</a>
+        </div>
+        <div *ngIf=" this.idUser > 0 " align="right">
+          <a (click)="notFavourite(post)" class="btn btn-sm btn-danger" id="notFavourite">UN MARK AS A FAVOURITE</a>
+        </div>
+        <div class="card-body" align="center">
+          <a routerLink="{{post.id}}"><h4 class="card-title">{{post.title | uppercase}}</h4></a>
+        </div>
+        <div class="bod">
+          <p class="card-text">By.{{post.authorName}} On.{{post.postDate}}</p>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+</body>
